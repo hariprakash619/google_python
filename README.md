@@ -1,2 +1,3 @@
 # google_python
-Google for education
+Google for education run though of basics.
+
