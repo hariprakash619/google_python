@@ -1,4 +1,3 @@
-
 # A. donuts
 # Given an int count of a number of donuts, return a string
 # of the form 'Number of donuts: <count>', where <count> is the number
@@ -8,12 +7,13 @@
 # and donuts(23) returns 'Number of donuts: many'
 def donuts(count):
   # +++your code here+++
-  if(count<10):
-    pHolder = count
+  if(count < 10):
+    pHolder = str(count)
+    pHolder = pHolder
   else:
-    pHolder = 'many'
-  print('Number of donuts:',pHolder)
-  return
+    pHolder = ' many'
+  x = 'Number of donuts:' + pHolder
+  return x
 
 
 # B. both_ends
@@ -23,7 +23,8 @@ def donuts(count):
 # is less than 2, return instead the empty string.
 def both_ends(s):
   # +++your code here+++
-  return
+  st = s[1:2]+s[:-2]
+  return st
 
 
 # C. fix_start
@@ -37,8 +38,14 @@ def both_ends(s):
 # where all instances of stra have been replaced by strb.
 def fix_start(s):
   # +++your code here+++
-  return
-
+  d = []
+  res = not bool(d)
+  s1 = ''
+  one = s[0]
+  back = s[1:]
+  x = back.replace(one,'*')
+  y = s[0] + x
+  return y
 
 # D. MixUp
 # Given strings a and b, return a single string with a and b separated
